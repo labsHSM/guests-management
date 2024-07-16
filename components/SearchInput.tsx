@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 
 interface SearchInputProps {
   className?: string;
 }
 
+// eslint-disable-next-line react/require-default-props
 export default function SearchInput({ className }: SearchInputProps) {
   return (
     <form className={className}>

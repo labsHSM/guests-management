@@ -1,13 +1,13 @@
-import SearchInput from "@/components/SearchInput";
+import SearchInput from '@/components/SearchInput';
 
 export default function StyleSample() {
   return (
     <div className="h-fit w-screen p-10 flex flex-col items-center">
       <div className="text-center mb-4 custom-h3">Buttons</div>
       <div className="mb-14 flex flex-row items-center">
-        <button className="btn btn-primary w-auto">Primary</button>
-        <button className="btn btn-light w-auto">Light/Normal</button>
-        <button className="btn btn-dark w-auto">Dark</button>
+        <button type="button" className="btn btn-primary w-auto">Primary</button>
+        <button type="button" className="btn btn-light w-auto">Light/Normal</button>
+        <button type="button" className="btn btn-dark w-auto">Dark</button>
       </div>
       <div className="text-center mb-4 custom-h3">Inputs</div>
       <div className="w-4/6 mb-14 flex flex-col items-center">
