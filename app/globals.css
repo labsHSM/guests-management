@@ -26,6 +26,47 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer components {
+  /* Button */
+  .btn {
+    @apply rounded-md px-4 py-2 m-2 transition duration-500 ease-in-out select-none focus:outline-none focus:ring focus:ring-indigo-500 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply border border-indigo-500 bg-[#5175FD] text-white hover:bg-indigo-600;
+  }
+  .btn-light {
+    @apply border border-transparent text-base font-medium text-gray-700 bg-indigo-200 hover:bg-indigo-300;
+  }
+  .btn-dark {
+    @apply border border-gray-700 bg-gray-600 text-white hover:bg-gray-800;
+  }
+
+  /* Input */
+  .custom-input {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+  .label {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+  }
+  .form-row {
+    @apply w-full flex flex-row items-center mb-5;
+  }
+
+  /* Heading */
+  .custom-h1 {
+    @apply text-3xl font-bold;
+  }
+  .custom-h2 {
+    @apply text-2xl font-bold;
+  }
+  .custom-h3 {
+    @apply text-xl font-semibold;
+  }
+  .custom-h4 {
+    @apply text-base font-semibold;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
