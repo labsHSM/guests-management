@@ -1,11 +1,11 @@
 export default function StyleSampleLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className="">{children}</body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className="">{children}</body>
+        </html>
+    );
 }
